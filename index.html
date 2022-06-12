@@ -11,7 +11,7 @@
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
 
 </head>
-<body>
+<body style="margin: 0; overflow: hidden">
     <a-scene
       vr-mode-ui="enabled: false"
       embedded
@@ -26,7 +26,7 @@
       <a-entity
         look-at="[gps-camera]"
         gltf-model="#iconMap"
-        scale="10 10 10"
+        scale="1 1 1"
         gps-entity-place="latitude: -16.50307892414885; longitude: -68.14722533949563;"
       ></a-entity>
       <a-camera gps-camera rotation-reader> </a-camera>
