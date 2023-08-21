@@ -22,6 +22,7 @@ const iniciarSesion = async () => {
           // Almacenar el token en localStorage
           localStorage.setItem('token', data.token);
           // Redirigir a otra página o realizar otras acciones
+          window.location.href = '../fcpn/fcpn.html';
         } else {
           console.log('Credenciales inválidas');
         }
