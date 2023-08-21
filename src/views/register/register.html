@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Registro</title>
+    <script src="./register.js"></script>
+   
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body class="min-h-screen bg-gray-100">
+  <header class="h-custom-10 bg-black text-white flex items-center justify-center">
+    <nav class="w-full">
+      <ul class="flex justify-center px-2">
+        <li><a href="#">Registro</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="h-custom-90 bg-yellow-200 flex justify-center items-center">
+    <div>
+      <h1 class="text-center text-3xl text-gray-800 font-serif mb-4">Registro</h1>
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input class="ml-4" type="text" id="nombre" name="nombre"/><br><br>
+      
+        <label for="apellidos">Apellidos:</label>
+        <input class="ml-2" type="text" id="apellidos" name="apellidos"/><br><br>
+      
+        <label for="email">Email:</label>
+        <input class="ml-9" type="email" id="email" name="email"/><br><br>
+      
+        <label for="password">Password:</label>
+        <input class="ml-2" type="password" id="password" name="password"/><br><br>
+        
+        <div class=" text-center">
+          <button onclick="registro()" class="bg-green-400">Registrar</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <style>
+    /* Estilos personalizados para las alturas */
+    .h-custom-10 {
+      height: 10vh;
+    }
+    .h-custom-90 {
+      height: 90vh;
+    }
+  </style>
+</body>
+</html>

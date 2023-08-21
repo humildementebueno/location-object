@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Login</title>
+    <!-- Agrega el enlace a las hojas de estilo de Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body class="min-h-screen bg-gray-100">
+  <!-- Encabezado (header) con alto del 10% del viewport -->
+  <header class="h-custom-10 bg-black text-white flex items-center justify-center">
+    <nav class="w-full">
+      <ul class="flex justify-between px-2">
+        <li><a href="#">Dashboard</a></li>
+        <div class="flex justify-end">
+          <li class="px-7"><a href="./views/login/login.html">Login</a></li>
+          <li class="px-7"><a href="./views/register/register.html">Register</a></li>
+        </div>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- Sección (section) con alto del 90% del viewport -->
+  <section class="h-custom-90 bg-yellow-200 flex justify-center items-center">
+    <div>
+      <h1 class="text-center text-3xl text-gray-800 font-serif mb-4">Iniciar Sesión</h1>
+      <form action="" >
+        <label class="mr-2" for="username">Username:</label>
+        <input class="mb-2" type="text" name="username" id="username"/></br>
+        <label class="mr-3" for="password">Password:</label>
+        <input class="mb-2" type="password" name="password" id="password"/></br>
+        <div class=" text-center">
+          <button onclick="iniciarSesion()" class="bg-green-400">Entrar</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <style>
+    /* Estilos personalizados para las alturas */
+    .h-custom-10 {
+      height: 10vh;
+    }
+    .h-custom-90 {
+      height: 90vh;
+    }
+  </style>
+  <script src="./login.js"></script>
+</body>
+</html>

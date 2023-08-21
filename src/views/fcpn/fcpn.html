@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCPN</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="fcpn.css">
+</head>
+
+<body class="min-h-screen bg-gray-100">
+    <header class="h-custom-10 bg-black text-white flex items-center justify-center">
+        <nav class="w-full">
+            <ul class="flex justify-between px-2">
+                <li><a class="text-2xl font-serif " href="#">Facultad de Ciencias Puras y Naturales</a></li>
+                <li>
+                    
+                </li>
+            </ul>
+        </nav>
+ 
+            <div class="relative">
+                <img class="ham w-10 h-10 mr-4 rounded-full cursor-pointer" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs3hgwmFJJWAAQN0-RHrtooUL7lYn-kl6e5g&usqp=CAU" alt="login" id="profile-image">
+                <div class="hidden absolute bg-blue-200 mt-3 pt-2 py-2 w-40 right-0 rounded-md shadow-lg flex flex-col" id="config-menu">
+                    <!-- Opciones de configuración -->
+                    <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-blue-400 flex-grow">Configuración 1</a>
+                    <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-blue-400 flex-grow">Configuración 2</a>
+                    <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-blue-400 flex-grow">Configuración 3</a>
+                </div>
+            </div>
+    
+    </header>
+    
+    
+    <section class="h-custom-90 bg-yellow-200 flex justify-center items-center">
+        <div>
+            <h1 class="text-center text-3xl text-gray-800 font-serif mb-4">Elige una unidad administrativa!!</h1>
+            <div class="text-center mb-2">
+                <button class="bg-green-600 w-72 h-12 text-2xl text-gray-100">Carreras</button>
+            </div>
+            <div class="text-center mb-2 ">
+                <button class="bg-green-600 w-72 text-2xl h-12 text-gray-100">Direccion Facultativo</button>
+            </div>
+            <div class="text-center mb-2">
+                <button class="bg-green-600 w-72 h-12 text-2xl text-gray-100">Direccion Pre-facultativo</button>
+            </div>
+            <div class="text-center mb-2">
+                <button class="bg-green-600 w-72 h-12 text-2xl text-gray-100">Tics</button>
+            </div>
+            <div class="text-center mb-2">
+                <button class="bg-green-600 w-72 h-12 text-2xl text-gray-100">Comedor</button>
+            </div>
+            <div class="text-center mb-2">
+                <button class="bg-green-600 w-72 h-12 text-2xl text-gray-100">Tutorial explicativo</button>
+            </div>
+        </div>
+    </section>
+   
+    
+    <style>
+        /* Estilos personalizados para las alturas */
+        .h-custom-10 {
+            height: 10vh;
+        }
+
+        .h-custom-90 {
+            height: 90vh;
+        }
+    </style>
+    <script src="./fcpn.js"></script>
+</body>
+
+</html>
