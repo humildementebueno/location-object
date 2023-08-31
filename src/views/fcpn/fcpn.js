@@ -13,7 +13,9 @@ const getProfileData = async () => {
         console.log(response);
         if (response.ok) {
           const data = await response.json();
-          console.log('Datos del perfil:', data);
+          const userData = data.data[0];
+          console.log('Datos del perfil: ', userData);
+          return userData;
         } else {
           console.log('Error al obtener los datos del perfil');
         }
@@ -23,14 +25,28 @@ const getProfileData = async () => {
     } else {
       console.log('No se encontró el token en el localStorage');
     }
-  };
 
+  };
+//cargando los datos del user a la hamburguesa
+const showUser = async () => {
+  try {
+      const user = await getProfileData(); // Espera a que se obtengan los datos del usuario
+      const profile1 = document.getElementById('user-currently1');
+      const profile2 = document.getElementById('user-currently2');
+      
+      // Usar textContent para asignar los valores a los elementos
+      profile1.textContent = `Nombre de usuario: ${user.username}`;
+      profile2.textContent = `Correo electrónico: ${user.correo}`;
+  } catch (error) {
+      console.error('Error:', error);
+  }
+};
 
 
 // Esperar a que se cargue el DOM
 document.addEventListener("DOMContentLoaded", function() {
-     getProfileData();
-
+    //  getProfileData();
+    showUser();
     // Agregar un evento de clic al perfil
     const profileImage = document.getElementById('profile-image');
     const configMenu = document.getElementById('config-menu');
