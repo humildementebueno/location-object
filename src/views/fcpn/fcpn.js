@@ -1,10 +1,23 @@
+// Función para cerrar la token de un usuario
+const logOut= ()=> {
+  event.preventDefault();
+  // Obtener el objeto de la token
+  const token = localStorage.getItem("token");
+  console.log("oyeeee!!!");
+  console.log('este es el token: ',token);
+  // Eliminar el objeto de la token
+  localStorage.removeItem("token");
+
+  // Redireccionar a la página de inicio
+  window.location.href = "../../index.html";
+}
 // Función asincrónica para obtener los datos del perfil
 const getProfileData = async () => {
     const token = localStorage.getItem('token');
     console.log(token);
     if (token) {
       try {
-        const response = await fetch('http://192.168.1.201:5000/users', {
+        const response = await fetch('http://172.24.19.82:5000/users', {
           method: 'GET',
           headers: {
             'Authorization': `Bearer ${token}`
