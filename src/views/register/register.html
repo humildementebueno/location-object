@@ -16,7 +16,7 @@
       </ul>
     </nav>
   </header>
-  <section class="h-custom-90 bg-yellow-200 flex justify-center items-center">
+  <section class="h-custom-90 plomo flex justify-center items-center">
     <div>
       <h1 class="text-center text-3xl text-gray-800 font-serif mb-4">Registro</h1>
       <div>
@@ -24,14 +24,18 @@
           <label for="nombre">Nombre:</label>
           <input class="ml-4" type="text" id="nombre" name="nombre"/><br><br>
         
+          <label for="rol">rol:</label>
+          <input class="ml-14" type="text" id="rol" name="password"/><br><br>
+          
           <label for="email">Email:</label>
           <input class="ml-9" type="email" id="email" name="email"/><br><br>
         
           <label for="password">Password:</label>
           <input class="ml-2" type="password" id="password" name="password"/><br><br>
           
+
           <div class=" text-center">
-            <button onclick="registro()" class="bg-green-400">Registrar</button>
+            <button onclick="registro()" class="azul">Registrar</button>
           </div>
         </form>
       </div>
@@ -39,6 +43,12 @@
   </section>
   <style>
     /* Estilos personalizados para las alturas */
+    .azul{
+      background-color: #274690;
+    }
+    .plomo{
+      background-color: #4A5261;
+    }
     .h-custom-10 {
       height: 10vh;
     }
