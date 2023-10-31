@@ -7,7 +7,7 @@ const logOut= ()=> {
   localStorage.removeItem("token");
 
   // Redireccionar a la página de inicio
-  window.location.href = "../../index.html";
+  window.location.href = "../../../../index.html";
 }
 // Función asincrónica para obtener los datos del perfil
 const getProfileData = async () => {

@@ -1,0 +1,9 @@
+/* Estilos para el menú desplegable */
+#config-menu {
+    width: 100vw;
+    height: 90vh;
+}
+
+.show-menu #config-menu {
+    display: block;
+}
