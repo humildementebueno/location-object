@@ -4,15 +4,15 @@ const registro = async () => {
       // Obtener los valores de los campos del formulario (nombre, email, contraseña, rol)
       const nombre = document.getElementById('nombre').value;
       const email = document.getElementById('email').value;
-      const password = document.getElementById('password').value;
       const rol = document.getElementById('rol').value;
+      const password = document.getElementById('password').value;
     
       // Crear un objeto con los datos del usuario
       const nuevoUsuario = {
         nombre: nombre,
         email: email,
-        password: password,
         rol: rol,
+        password: password,
       };
     
       try {
