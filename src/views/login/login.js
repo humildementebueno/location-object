@@ -1,6 +1,6 @@
 const iniciarSesion = async () => {
     event.preventDefault();
-    
+    console.log("iniciar sesion");
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
         console.log(email," ",password);
@@ -34,3 +34,13 @@ const iniciarSesion = async () => {
     }
   };
   
+ const reseña=() =>{
+  event.preventDefault();
+    console.log("reseña");
+ }
+
+ const iniciarSesion1 = () => {
+  event.preventDefault();
+  // Cambiar el color de fondo del body
+  document.body.style.backgroundColor = 'blue'; // Puedes reemplazar 'blue' con el color que desees
+}
