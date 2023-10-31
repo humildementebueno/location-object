@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FCPN</title>
+    <title>Carreras</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="fcpn.css">
@@ -14,7 +14,7 @@
     <header class="h-custom-10 bg-black text-white flex items-center justify-center">
         <nav class="w-full">
             <ul class="flex justify-between px-2">
-                <li><a class="text-2xl font-serif " href="#">Facultad de Ciencias Puras y Naturales</a></li>
+                <li><a class="text-2xl font-serif " href="#">Carreras de la FCPN</a></li>
                 <li>
 
                 </li>
@@ -58,36 +58,21 @@
 
     <section class="h-custom-90 plomo flex justify-center items-center">
         <div>
-            <h1 class="text-center text-3xl text-gray-800 font-serif mb-4">Elige una unidad administrativa!!</h1>
+            <h1 class="text-center text-3xl text-gray-800 font-serif mb-4">Elige una unidad carrera!!</h1>
             <div class="text-center mb-2">
                 <button class="azul w-72 h-12 text-2xl text-gray-100"
-                onclick="carreras()"
-                >Carreras</button>
+                onclick="carreraInfo()"
+                >Carreras de Informatica</button>
             </div>
             <div class="text-center mb-2 ">
                 <button class="azul w-72 text-2xl h-12 text-gray-100"
-                onclick="direccionFacu()"
-                >Direccion Facultativo</button>
+                onclick="direccionEsta()"
+                >Direccion de Estadistica</button>
             </div>
             <div class="text-center mb-2">
                 <button class="azul w-72 h-12 text-2xl text-gray-100"
-                onclick="carreraPreFacu()"
-                >Direccion Pre-facultativo</button>
-            </div>
-            <div class="text-center mb-2">
-                <button class="azul w-72 h-12 text-2xl text-gray-100"
-                onclick="tics()"
-                >Tics</button>
-            </div>
-            <div class="text-center mb-2">
-                <button class="azul w-72 h-12 text-2xl text-gray-100"
-                onclick="Comedor()"
-                >Comedor</button>
-            </div>
-            <div class="text-center mb-2">
-                <button class="azul w-72 h-12 text-2xl text-gray-100"
-                onclick="tutoExpli()"
-                >Tutorial explicativo</button>
+                onclick="carreraMate()"
+                >Direccion de Matematica</button>
             </div>
         </div>
     </section>
@@ -111,7 +96,7 @@
             height: 90vh;
         }
     </style>
-    <script src="./fcpn.js"></script>
+    <script src="./carrera.js"></script>
 </body>
 
 </html>

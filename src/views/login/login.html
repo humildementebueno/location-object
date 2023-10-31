@@ -24,16 +24,17 @@
   </header>
   
   <!-- Sección (section) con alto del 90% del viewport -->
-  <section class="h-custom-90 bg-yellow-200 flex justify-center items-center">
+  <section class="h-custom-90 plomo flex justify-center items-center">
     <div>
       <h1 class="text-center text-3xl text-gray-800 font-serif mb-4">Iniciar Sesión</h1>
       <form action="" >
-        <label class="mr-2" for="username">Username:</label>
-        <input class="mb-2" type="text" name="username" id="username"/></br>
+        <label class="mr-10" for="email">Email:</label>
+        <input class="mb-2 " type="email" name="email" id="email"/></br>
         <label class="mr-3" for="password">Password:</label>
         <input class="mb-2" type="password" name="password" id="password"/></br>
         <div class=" text-center">
-          <button onclick="iniciarSesion()" class="bg-green-400">Entrar</button>
+          <button onclick="iniciarSesion()" class="azul w-36 h-10 text-white">Iniciar Sesion</button>
+          <button onclick="reseña()" class="azul w-36 h-10 text-white">Reseña</button>
         </div>
       </form>
     </div>
@@ -41,6 +42,12 @@
 
   <style>
     /* Estilos personalizados para las alturas */
+    .azul{
+      background-color: #274690;
+    }
+    .plomo{
+      background-color: #4A5261;
+    }
     .h-custom-10 {
       height: 10vh;
     }

@@ -3,8 +3,6 @@ const logOut= ()=> {
   event.preventDefault();
   // Obtener el objeto de la token
   const token = localStorage.getItem("token");
-  console.log("oyeeee!!!");
-  console.log('este es el token: ',token);
   // Eliminar el objeto de la token
   localStorage.removeItem("token");
 
@@ -17,12 +15,13 @@ const getProfileData = async () => {
     console.log(token);
     if (token) {
       try {
-        const response = await fetch('http://172.24.19.82:5000/users', {
+        const response = await fetch('http://localhost:8080/api/usuarios/profile', {
           method: 'GET',
           headers: {
             'Authorization': `Bearer ${token}`
           }
         });
+        
         console.log(response);
         if (response.ok) {
           const data = await response.json();
@@ -55,11 +54,22 @@ const showUser = async () => {
   }
 };
 
+const carreras = () =>{
+  event.preventDefault();
+
+
+  console.log("carrera");
+  // Redireccionar a la página de inicio
+  window.location.href = "../carrera/carrera.html";
+}
 
 // Esperar a que se cargue el DOM
 document.addEventListener("DOMContentLoaded", function() {
     //  getProfileData();
     showUser();
+    // navegarcarrera
+    carreras();
+
     // Agregar un evento de clic al perfil
     const profileImage = document.getElementById('profile-image');
     const configMenu = document.getElementById('config-menu');
