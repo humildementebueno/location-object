@@ -39,8 +39,15 @@ const iniciarSesion = async () => {
     console.log("reseña");
  }
 
- const iniciarSesion1 = () => {
+ document.addEventListener('DOMContentLoaded', function() {
+  const button = document.getElementById('blueButton');
+  button.addEventListener('click', iniciarSesion1);
+});
+
+function iniciarSesion1() {
   event.preventDefault();
-  // Cambiar el color de fondo del body
-  document.body.style.backgroundColor = 'blue'; // Puedes reemplazar 'blue' con el color que desees
+  const button = document.getElementById('blueButton');
+  button.style.backgroundColor = 'blue'; // Cambiar el color de fondo del botón
 }
+
+
