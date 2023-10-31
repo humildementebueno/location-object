@@ -34,20 +34,19 @@ const iniciarSesion = async () => {
     }
   };
   
- const reseña=() =>{
+ const reseña = () =>{
   event.preventDefault();
     console.log("reseña");
  }
 
  document.addEventListener('DOMContentLoaded', function() {
-  const button = document.getElementById('blueButton');
-  button.addEventListener('click', iniciarSesion1);
+  iniciarSesion();
 });
 
-function iniciarSesion1() {
-  event.preventDefault();
-  const button = document.getElementById('blueButton');
-  button.style.backgroundColor = 'blue'; // Cambiar el color de fondo del botón
-}
+// function iniciarSesion1() {
+//   event.preventDefault();
+//   const button = document.getElementById('blueButton');
+//   button.style.backgroundColor = 'blue'; // Cambiar el color de fondo del botón
+// }
 
 
